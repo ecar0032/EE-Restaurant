@@ -163,7 +163,12 @@ public class Book_A_Table extends Fragment {
     public void add_Booking(String tabID,String username,String name,String nuOfPeople,String phoneNumber,String date,String time){
         long value = db.addBooking(tabID, username, name, nuOfPeople, phoneNumber, date, time);
         if (value > 0) {
-            Toast.makeText(generalView.getContext(), "Booked!", Toast.LENGTH_SHORT).show();
+            if(tabID == null || username == "" || name == "" || nuOfPeople == "" || phoneNumber == "" || date == "Date Selected" || time == "Time Selected"){
+                Toast.makeText(generalView.getContext(), "Check for Empty Fields", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                Toast.makeText(generalView.getContext(), "Booked!", Toast.LENGTH_SHORT).show();
+            }
         }
         else
         {
