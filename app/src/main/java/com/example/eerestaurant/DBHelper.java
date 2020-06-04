@@ -33,7 +33,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     //Starting the database from fresh if the version number is changed in ascending order.
     public DBHelper(Context context) {
-        super(context, DATABASE_NAME, null, 11);
+        super(context, DATABASE_NAME, null, 15);
     }
 
     @Override

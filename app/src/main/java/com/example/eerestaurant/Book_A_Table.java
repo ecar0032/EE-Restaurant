@@ -160,19 +160,16 @@ public class Book_A_Table extends Fragment {
 
     //If all goes well the value should never be -1, if it is, then the booking is not stored and an error is displayed. If addBooking gives a number higher than 1 (Depends on how many entries there are)
     //there will be a "Booked!" Toast and the entry will be in the database. This is important to gather information about the booking in the profile fragment.
-    public void add_Booking(String tabID,String username,String name,String nuOfPeople,String phoneNumber,String date,String time){
-        long value = db.addBooking(tabID, username, name, nuOfPeople, phoneNumber, date, time);
-        if (value > 0) {
-            if(tabID == null || username == "" || name == "" || nuOfPeople == "" || phoneNumber == "" || date == "Date Selected" || time == "Time Selected"){
-                Toast.makeText(generalView.getContext(), "Check for Empty Fields", Toast.LENGTH_SHORT).show();
-            }
-            else {
+    public void add_Booking(String tabID,String username,String name,String nuOfPeople,String phoneNumber,String date,String time) {
+        if (tabID == null || username == "" || name == "" || nuOfPeople == "" || phoneNumber == "" || date == "Date Selected" || time == "Time Selected") {
+            Toast.makeText(generalView.getContext(), "Check for Empty Fields", Toast.LENGTH_SHORT).show();
+        } else {
+            long value = db.addBooking(tabID, username, name, nuOfPeople, phoneNumber, date, time);
+            if (value > 0) {
                 Toast.makeText(generalView.getContext(), "Booked!", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(generalView.getContext(), "Error", Toast.LENGTH_SHORT).show();
             }
-        }
-        else
-        {
-            Toast.makeText(generalView.getContext(), "Error", Toast.LENGTH_SHORT).show();
         }
     }
 
