@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">E &amp; E Restaurant</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="not_registered">Not Registered?</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="registerbutton">Register</string>
+    <string name="already_registered">Already Registered?</string>
+    <string name="title_activity_fragments">Fragments</string>
+    <string name="tab_text_1">About Us</string>
+    <string name="tab_text_2">Menu</string>
+    <string name="tab_text_3">Book A Table</string>
+    <string name="tab_text_4">Profile</string>
+</resources>

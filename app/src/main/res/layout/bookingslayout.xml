@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/fullnameplaceholder"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Full Name: "/>
+
+    <TextView
+        android:id="@+id/fullnametxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Default"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/fullnameplaceholder"/>
+    <TextView
+    android:id="@+id/usernameplaceholder"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:text="Username: "
+    android:layout_below="@+id/fullnameplaceholder"/>
+
+    <TextView
+        android:id="@+id/usernametxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Default"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/usernameplaceholder"
+        android:layout_below="@id/fullnameplaceholder"/>
+    <TextView
+        android:id="@+id/numberofpeepplaceholder"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="People: "
+        android:layout_below="@+id/usernameplaceholder"/>
+
+    <TextView
+        android:id="@+id/peopletxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Default"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/numberofpeepplaceholder"
+        android:layout_below="@id/usernameplaceholder"/>
+    <TextView
+        android:id="@+id/phoneplaceholder"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Phone: "
+        android:layout_below="@+id/peopletxt"/>
+
+    <TextView
+        android:id="@+id/phonetxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Default"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/phoneplaceholder"
+        android:layout_below="@id/peopletxt"/>
+    <TextView
+        android:id="@+id/dateplaceholder"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Date: "
+        android:layout_below="@+id/phonetxt"/>
+
+    <TextView
+        android:id="@+id/datetxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Default"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/dateplaceholder"
+        android:layout_below="@id/phonetxt"/>
+    <TextView
+        android:id="@+id/timeplaceholder"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Time: "
+        android:layout_below="@+id/datetxt"/>
+
+    <TextView
+        android:id="@+id/timetxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Default"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/timeplaceholder"
+        android:layout_below="@id/datetxt"/>
+
+
+</RelativeLayout>
